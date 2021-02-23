@@ -67,9 +67,13 @@ nav a {
     font-weight: 700;
 }
 
-nav a:hover {
+ nav a:hover {
     color: #ffe10f;
 
+}
+
+p a:hover {
+     color: #ffe10f;
 }
 
 p {
