@@ -1,155 +1,21 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-
-body {
-    line-height: 1;
-}
-
-ol,
-ul {
-    list-style: none;
-}
-
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
 
 :root {
-    --main-color: #FCAF01;
+    --main-color: orange;
     --base-color: #ddd;
 
-    --secondary-color: #F55108;
-    --type: 'PT Sans', sans-serif;
+    --secondary-color: #bbd57d;
+/*    --type: "Open Sans, sans-serif;*/
+
 }
 
+/*
 body {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: var(--main-color);
     box-sizing: border-box;
-    background-color: #FCAF01;
-
+    background-color: #ddd;
 }
+*/
 
 h1,
 h2,
@@ -157,133 +23,92 @@ h3,
 h4,
 h5,
 h6 {
- 
-    font: var(--type);
-       font-weight: 700;
+     font-weight: 700;
+/*    font: 'Open Sans Condensed', sans-serif;*/
    
 }
 
-h1 {
-    font-size: 5em;
-    text-decoration: underline;
-    line-height: 1.25em;
-}
+
 
 h2 {
     font-size: 2em;
     text-decoration: underline;
 }
 
-
+h3 {
+    flex: 1;
+    font-size: 1.5em;
+}
+/*
 
 header {
     display: flex;
-      align-items: center;
-      justify-content: space-between;
     padding: 5px;
     position: fixed;
-    background: white;
+    background: var(--main-color);
     width: 100vw;
-    height: 80px;
+    height: 40px;
     top: 0;
     box-shadow: 2px 3px 3px rgba(50, 50, 50, 0.5);
 }
+*/
 
 
-
-.lockup {
-    display:flex;
-
-    align-items: center;
-    
-}
-h3 {
-    font-size: 1.5em;
-}
-
-.icon {
-    width:50px;
-    height: 50px;
-    padding: 0px 15px;
-}
 
 nav {
-    padding: 5px 0px;
-  
-    min-width: 300px;
-    justify-self: flex-end;
+    padding: 20px 0px;
+    min-width: 400px;
+      border-top: 1px solid #aaa;
 }
 
 nav a {
-    margin: 0 15px;
-    color: #222;
+    margin: 0 20px 0 0;
+/*    color: #222;*/
     text-decoration: none;
     font-weight: 700;
 }
 
 nav a:hover {
-    color: var(--main-color);
+    color: #ffe10f;
 
 }
 
 p {
     line-height: 1.5em;
-    display: none;
 }
+
+.container {
+    background: white;
+}
+/*
 .container {
     box-shadow: 5px 5px 20px rgba(60, 60, 60, 20);
 
-    margin: 30px auto;
+    margin: 50px auto;
     width: 854px;
-    background: white;
+    background: var(--base-color);
 
 }
+*/
 
 .container a {
-    color: var(--secondary-color);
+    color: var(--main-color);
     box-sizing: border-box;
 }
 
-.container a:hover{
-    color: var(--main-color);
-    
-}
-
-#about {
-    display: flex; 
-    flex-direction: row;
-}
-
 section {
-    padding: 50px 10px;
-    display: flex;
-    flex-direction: column;
+
     background: white;
 }
 
-.wide {
-    width: 100%;
-}
-
-.wide img {
-    width: 100%;
-}
-
-#about {
-    height: 70vh;
-
-}
 
 
 #twitch-embed {
+    width: 100%;
+    margin: 0;
+    height; 30vh;
 }
 
-
-.research {
-padding: 10px;
-    background: white;
-    display: block;
-}
 
 .white {
     background: white;
@@ -296,7 +121,6 @@ padding: 10px;
 
 .right {
     flex: 1;
-    padding: 20px;
 }
 
 .right img {
@@ -304,16 +128,12 @@ padding: 10px;
 }
 
 footer {
-    display:flex;
-      align-items: center;
-    background: var(--main-color);
-      background: #ccc;
-    height: 60px;;
-    padding: 20px 10px;
+/*    background: var(--main-color);*/
+    height: 90px;
+    border-top: 1px solid #aaa;
+    
 }
 
 footer img {
-    width: 40px;
-    margin-right: 10px;
-
+    width: 50px;
 }
