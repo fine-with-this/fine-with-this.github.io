@@ -1,84 +1,123 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
+
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
     <title>Fine With This</title>
-    <meta charset="utf-8" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+    <meta name="description" content="">
+    <meta name="author" content="">
     <!--<link rel="shortcut icon" href="favicon.ico" />-->
-    <link rel="Stylesheet" href="style.css" type="text/css" media="all" />
+
+    <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Open+Sans+Condensed:wght@700&display=swap" rel="stylesheet">
+
+
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
     <!--Link to jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!--Link to jQuery UI-->
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Open+Sans+Condensed:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
 
 </head>
 
 
+
+
+
+
 <body>
-    <header>
-        <h3>FINE WITH THIS</h3>
-        <nav><a href="#about">About</a>
-            <a href="#twitch-embed">Live Stream</a>
-            <a href="#research">Research</a>
-        </nav>
-    </header>
     <div class="container">
-    <div class="wide">
-<img src="img/3DPrint.jpeg">
-        </div>
+        <header>
+            <h1>FINE WITH THIS</h1>
+            <nav><a href="#about">About</a>
+                <a href="#twitch-embed">Live Stream</a>
+                <a href="#research">Research</a>
+            </nav>
+        </header>
+      
 
-        <section id="about">
-           <div class="left white">
-            <h1>Fine With This</h1>
-            <br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque odit distinctio aliquid maiores totam, vel voluptas facere obcaecati asperiores! Molestias libero, illum. Asperiores quisquam fugiat deleniti optio, atque iusto, totam.</p>
-            </div>
-            <div class="right">
-            <img src="img/FineRhino.jpeg" alt="fine">
-            </div>
+        <div class="row">
+         <h2>About</h2>
+                <section id="about">
+         
+            <div class="one-half column">
            
+                  
+                    <p>Fine With This is a work-in-progress and collaboration between <a href="http://taylorhokanson.com/category/projects/">Taylor Hokanson</a>, <a href="http://kdartt.com/"> Kay Dartt</a>, and <a href="http://jstephenlee.com">Stephen Lee</a>, and is supported by a Faculty Development Grant from Columbia College Chicago. Inspired in part by KC Green of “This is Fine” fame, FWT will be comprised of a series of large (>12″), cast iron letters. These casts will be plumbed with propane, so they can burst into flame on command. FWT is designed to be rearrangeable, allowing us to change the text in response to the multitude of sociopolitical crisis competing for our attention in 2020.</p>
+
+          
+
+            </div>
+                  <div class="one-half column" >  <img src="img/iron_pre_drill_IG.jpg" class="u-max-full-width">
+                    </div>
+                  </section>
+        </div>
+        <div id="twitch-embed" class="one column"><h2>Live Stream</h2></div>
 
 
+        <!-- Load the Twitch embed script -->
+        <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+        <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+        <script type="text/javascript">
+            new Twitch.Embed("twitch-embed", {
+                width: "100%",
+                height: 500,
+                channel: "fine_with_this",
+                // only needed if your site is also embedded on embed.example.com and othersite.example.com 
+                //        parent: ["embed.example.com", "othersite.example.com"]
+            });
+        </script>
+
+
+        <section class="research">
+           <div>
+            <h2 id="research" class="title">Research</h2>
+            <p>Coming soon...</p>
+            </div>
         </section>
-         <section>
-            <a href="#">Link</a>
-            </section>
 
-        <section>
-            <div id="twitch-embed"></div>
-
-            <!-- Load the Twitch embed script -->
-            <script src="https://embed.twitch.tv/embed/v1.js"></script>
-
-            <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
-            <script type="text/javascript">
-                new Twitch.Embed("twitch-embed", {
-                    width: 854,
-                    height: 480,
-                    channel: "fine_with_this",
-                    // only needed if your site is also embedded on embed.example.com and othersite.example.com 
-                    //        parent: ["embed.example.com", "othersite.example.com"]
-                });
-
-            </script>
-
-        </section>
-        <section id="research">
-            <h2>RESEARCH</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit numquam voluptate itaque, quibusdam! Rerum eos vero, recusandae, officiis, nihil voluptate perspiciatis eum obcaecati mollitia in cupiditate, rem consequuntur cum fugit.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quo sint tempora, tempore saepe eligendi cumque quasi architecto tenetur necessitatibus id optio odio, magnam unde laboriosam modi recusandae repellendus culpa.</p>
-        </section>
 
 
         <footer>
-
+            <a href="https://twitter.com/fine_with_this"><img src="img/twitter.png" alt="twitter"></a>
+            <a href="https://www.instagram.com/fine_with_this/"><img src="img/instagram.png" alt="instagram"></a>
         </footer>
     </div>
 
-    <script src="scripts.js"></script>
+    <script src="scripts.js">
+        < /div>
+
+
+
+
+
+
+
+        <
+        script src = "scripts.js" >
+    </script>
 
 
 
