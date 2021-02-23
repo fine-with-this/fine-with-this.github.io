@@ -4,14 +4,16 @@
     --base-color: #ddd;
 
     --secondary-color: #bbd57d;
-/*    --type: "Open Sans, sans-serif;*/
+    --type: "Open Sans, sans-serif;
 
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
+/*
     background-color: var(--main-color);
     background-color: #ddd;
+*/
 }
 
 h1,
