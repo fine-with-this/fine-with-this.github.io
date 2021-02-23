@@ -8,14 +8,11 @@
 
 }
 
-/*
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: var(--main-color);
-    box-sizing: border-box;
     background-color: #ddd;
 }
-*/
 
 h1,
 h2,
@@ -24,7 +21,7 @@ h4,
 h5,
 h6 {
      font-weight: 700;
-/*    font: 'Open Sans Condensed', sans-serif;*/
+    font: 'Open Sans Condensed', sans-serif;
    
 }
 
