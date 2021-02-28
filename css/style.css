@@ -32,9 +32,10 @@ h6 {
 h2 {
     font-size: 2em;
 /*     text-decoration: underline; */
-    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
     padding-top:20px;
-    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
 }
 
 h3 {
@@ -42,7 +43,6 @@ h3 {
     font-size: 1.5em;
 }
 /*
-
 header {
     display: flex;
     padding: 5px;
@@ -89,11 +89,9 @@ p {
 /*
 .container {
     box-shadow: 5px 5px 20px rgba(60, 60, 60, 20);
-
     margin: 50px auto;
     width: 854px;
     background: var(--base-color);
-
 }
 */
 
@@ -112,7 +110,6 @@ section {
 #twitch-embed {
     width: 100%;
     margin: 0 0 30px 0;
-    height; 30vh;
 }
 
 
