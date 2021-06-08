@@ -1,7 +1,7 @@
 .header-blue {
   background: linear-gradient(135deg, orange, red);
   background-color: #f46d34;
-  padding-bottom: 80px;
+  padding-bottom: 30px;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -217,5 +217,10 @@
 
 a {
   color: #ddd;
+}
+
+.social {
+  width: 50px;
+  margin: 10px;
 }
 
