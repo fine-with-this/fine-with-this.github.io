@@ -71,6 +71,9 @@
 .card {
   margin: 15px;
   border: none;
-  padding-bottom: 100px;
+}
+
+.card-group {
+  margin-bottom: 75px;
 }
 
