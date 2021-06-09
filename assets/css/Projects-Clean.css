@@ -33,20 +33,24 @@
 }
 
 .projects-clean .projects {
+  padding-top: 20px;
   padding-bottom: 40px;
 }
 
 .projects-clean .item {
   text-align: center;
-  padding-top: 50px;
-  min-height: 425px;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  min-height: 0px;
 }
 
 .projects-clean .item .name {
-  font-weight: bold;
-  margin-top: 28px;
-  margin-bottom: 8px;
+  font-weight: normal;
+  padding: 10px;
+  margin-bottom: 0px;
   color: inherit;
+  text-align: left;
+  background: rgb(247,247,247);
 }
 
 .projects-clean .item .description {
