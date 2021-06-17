@@ -2,7 +2,7 @@
   background: linear-gradient(35deg, #ee4510, orange);
   background-color: #f46d34;
   padding-bottom: 30px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 @media (min-width:768px) {
@@ -216,7 +216,7 @@
 }
 
 a {
-  color: #ddd;
+  color: #fe983a;
 }
 
 .social {
