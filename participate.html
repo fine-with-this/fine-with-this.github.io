@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/Article-Clean.css">
     <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
     <link rel="stylesheet" href="assets/css/Features-Boxed.css">
@@ -23,19 +26,65 @@
     <link rel="stylesheet" href="assets/css/Responsive-Youtube-Embed.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/Team-Boxed.css">
+    <link rel="stylesheet" href="assets/css/updated-header.css">
     <link rel="stylesheet" href="assets/css/Video-Parallax-Background-v2.css">
 </head>
 
-<body>
-    <section class="contact-clean">
-        <form data-bss-recipient="ab3f31b8126ff038fa94ef16df28e3f7">
-            <h2 class="text-center">I Want to Control<br>Fine With This!</h2>
-            <div class="mb-3"><input class="form-control" type="text" name="name" placeholder="Twitch Handle" required=""></div>
+<body style="font-family: Lato, sans-serif;">
+    <section class="contact-clean" style="padding: 0px 0px 80px 0px;">
+        <header class="header-blue" style="color: rgb(255,255,255);">
+            <nav class="navbar navbar-light navbar-expand-md navigation-clean">
+                <div class="container"><a class="navbar-brand" href="index.html"><img id="logo-1" src="assets/img/fwt_square.png" style="width: 100px;height: 100px;"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navcol-2">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="about.html" style="color: rgb(255,255,255);">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="performance.html" style="color: rgb(255,255,255);">Performance</a></li>
+                            <li class="nav-item"><a class="nav-link" href="research.html" style="color: rgb(255,255,255);">Research</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <form data-bss-recipient="ab3f31b8126ff038fa94ef16df28e3f7" style="font-family: Lato, sans-serif;"><img src="assets/img/600_0289.jpg" style="width: 400px;">
+            <h2 class="text-center" style="font-family: Lato, sans-serif;">I Want to Control<br>Fine With This!</h2>
+            <p>After donating to the designated charity (see list below), you will receive instructions via email on how to activate the Fine With This sculpture. You will need to log into the Twitch performance to participate.&nbsp;</p>
+            <div class="mb-3"><input class="form-control" type="text" name="name" placeholder="Twitch Handle" required="" style="font-family: Lato, sans-serif;"></div>
             <div class="mb-3"><input class="form-control is-invalid" type="email" name="email" placeholder="Email" required=""></div>
             <div class="mb-3"><textarea class="form-control" name="message" placeholder="Pledged Donation (optional)" rows="14">Pledged Donation (optional)</textarea></div>
             <div class="mb-3"><button class="btn btn-primary" type="submit">send </button></div>
         </form>
+        <section></section>
     </section>
+    <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+        <div class="intro">
+            <h2 class="text-center" id="page-title" style="color: rgb(33, 47, 41);">Charities</h2>
+            <p class="text-center"> </p>
+        </div>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Performance</th>
+                        <th>Amount Raised</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>April 2021 NCCCIAP Travel Scholarship Fund</td>
+                        <td>$2600</td>
+                    </tr>
+                    <tr>
+                        <td>September 2021&nbsp;POSTSENSORIUM&nbsp;</td>
+                        <td>...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="text">
+            <p><br></p>
+            <h2></h2>
+        </div>
+    </div>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/smart-forms.min.js"></script>
     <script src="assets/js/Video-Parallax-Background-v2.js"></script>
